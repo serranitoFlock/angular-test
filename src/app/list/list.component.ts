@@ -1,5 +1,5 @@
 
-import { Component, Input, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 
@@ -9,12 +9,11 @@ import { MatListModule } from '@angular/material/list';
     styleUrl: './list.component.scss',
     templateUrl: './list.component.html'
 })
-export class ListComponent {
+export class ListComponent implements OnChanges {
   @Input() numberParam?: number;
   @Input() arrayStringParam?: Array<string>;
   @Input() objectParam: any;
 
-  ngOnInit(): void {}
   ngOnChanges(changes: SimpleChanges): void {
     if (
       changes['numberParam'] &&
