@@ -1,5 +1,7 @@
 <section class="row">
-  <mat-card *ngFor="let item of arrayStringParam">
-    <mat-card-content> {{ item }}</mat-card-content>
-  </mat-card>
+  @for (item of arrayStringParam; track item) {
+    <mat-card>
+      <mat-card-content> {{ item }}</mat-card-content>
+    </mat-card>
+  }
 </section>

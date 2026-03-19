@@ -1,11 +1,11 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, Input, SimpleChanges } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 
 @Component({
     selector: 'app-list',
-    imports: [CommonModule, MatCardModule, MatListModule],
+    imports: [MatCardModule, MatListModule],
     styleUrl: './list.component.scss',
     templateUrl: './list.component.html'
 })
