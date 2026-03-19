@@ -5,11 +5,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [ListComponent, MatInputModule, MatFormFieldModule, FormsModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [ListComponent, MatInputModule, MatFormFieldModule, FormsModule],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'angular-test';
